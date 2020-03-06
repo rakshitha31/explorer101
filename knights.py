@@ -1,5 +1,5 @@
 #Knight's tour problem
-#2 constraints- the new locations shols be within limits of a Knight's movement, can move only within N*N matrix
+#2 constraints- the new locations should be within limits of a Knight's movement, can move only within N*N matrix
 N = 8
 
 sol=[[0 for i in range(N)]for j in range(N)]
@@ -7,7 +7,7 @@ pathrow=[2, 1, -1, -2, -2, -1, 1, 2]
 pathcol=[1, 2, 2, 1, -1, -2, -2, -1]
 row=0
 col=0
-sol[0][0]=1
+sol[1][2]=1
 def isValidPath(sol, new_row, new_col):
     if(new_row>=0 and new_row<N and new_col>=0 and new_col<N and sol[new_row][new_col]==0):
         return True
